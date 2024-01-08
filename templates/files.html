@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Files</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h3>Uploaded Files</h3>
+    <ul>
+        {% for file in files %}
+            <li>{{ file }} 
+                <a href="{{ url_for('download_file', filename=file) }}">
+                    <button class="download">Download</button>
+                </a> 
+                <a href="{{ url_for('delete_file', filename=file) }}">
+                    <button class="delete">Delete</button>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

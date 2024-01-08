@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.download {
+    background-color: #5dB85D;
+    color: #fff;
+}
+
+button.delete {
+    background-color: #F44336;
+    color: #fff;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+button:hover.download {
+    background-color: #218838;
+}
+
+button:hover.delete {
+    background-color: #c82333;
+}
+
+
